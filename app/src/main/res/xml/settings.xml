@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <PreferenceCategory android:title="Conexión">
+    <Preference
+        android:key="wifiConf"
+        android:title="Wi-Fi"
+        android:summary="Configurar conexión">
+        <intent android:action="android.net.wifi.PICK_WIFI_NETWORK"/>
+    </Preference>
+    </PreferenceCategory>
+<PreferenceCategory android:title="General">
+    <CheckBoxPreference android:title="Auxiliar"
+        android:defaultValue="true"
+        android:summary="Activar modo auxiliar"
+        android:key="applicationAuxiliar" />
+    <CheckBoxPreference android:title="Reiniciar parametros"
+        android:defaultValue="false"
+        android:summary="Activar modo auxiliar"
+        android:key="applicationAuxiliar" />
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
